@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-app</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+</head>
+<body>
+    <div class="container progress-secondary">
+        <div class="header">
+            <h1 class="text-center mt-5 text-3xl font-bold">To Do List </h1>
+          </div>
+          <div class="main mt-5">
+            <div class="w-96 mx-auto flex">
+                <input 
+                id="input-value"
+                placeholder="Type here..."
+                class=" w-full input input-bordered input-success max-w-xs me-2"
+                type="text">
+                <br>
+                <button  id="task-btn" class="btn-success btn btn-outline">Add Task</button>
+            </div>
+          <div class=" w-[50%]  mx-auto my-4 overflow-x-auto">
+            <table class="table">
+                <tr>
+                    <th>Number</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                <tbody id="content-container">
+                    <!-- - <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Qual</td>
+                      </tr>  -->
+
+                </tbody>
+
+            </table>
+            <div class="text-end">
+                <button id="clear-btn" class="btn btn-error btn-xs mt-4">
+                  Clear All
+                </button>
+              </div>
+          </div>
+
+          </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
